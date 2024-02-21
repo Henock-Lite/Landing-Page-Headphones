@@ -14,6 +14,7 @@
   --color7: #d4dcff; /* color-txt */
   --color8: #22244d; /* cards */
 }
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -50,12 +51,18 @@ button:hover {
   position: fixed;
   background: var(--color1);
   z-index: 1000;
+  transition: ease-in-out 0.3s;
 }
 nav.first-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
+}
+.play-circle {
+  display: flex;
+  align-items: center;
   height: 100%;
 }
 .first-nav .logo {
@@ -74,10 +81,14 @@ nav.first-nav ul {
   align-items: center;
   height: 100%;
   width: auto;
+  transition: ease 0.3s;
+  color: #22244d;
 }
-nav li:hover {
+#premier {
   color: var(--color3);
+  transition: ease 0.3s;
 }
+
 header {
   background: url(./img/lx.jpg) center/cover;
   width: 100%;
