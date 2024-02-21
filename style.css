@@ -69,6 +69,11 @@ nav.first-nav ul {
   text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   cursor: pointer;
+  
+}
+.logo{
+  opacity: 0;
+  transition: ease-in-out  .5s;
 }
 .first-nav li {
   cursor: pointer;
@@ -81,7 +86,7 @@ nav.first-nav ul {
   align-items: center;
   height: 100%;
   width: auto;
-  transition: ease 0.3s;
+  transition: ease .3s;
   color: #22244d;
 }
 #premier {
@@ -302,7 +307,7 @@ video {
   text-transform: uppercase;
   width: 100%;
   height: 100%;
-  margin: 50px auto;
+  margin: 80px auto
 }
 .main-product h2 {
   position: absolute;
@@ -347,8 +352,9 @@ video {
   top: 5%;
   transform: translate(-50%, -50%);
   background: rgb(249, 188, 199);
-  transition: ease-in-out .4s;
+  transition: ease-in-out .5s;
   cursor: pointer;
+  opacity: 1;
 }
 .panier:hover{
   background:var(--color7);
@@ -358,6 +364,26 @@ video {
   font-weight: 900;
   transform: translateY(50%);
 }
+.parent-price{
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-variant: small-caps;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+.parent-price h3:hover{
+  color: rgb(112, 162, 236);
+}
+
+.bottom-cards{
+  width: 100%;
+  height: 100%;
+  margin: 80px 0;
+}
+
+
 
 
 
