@@ -21,11 +21,12 @@ window.addEventListener("scroll", () => {
     premier.style.color = " #fc484b";
   }
 
-  if (scroll > 1.0) {
-    bg.style.background = "#171933";
-    // bg.style.color = "#d4dcff";
-  } else {
-    bg.style.background = " #e1edf4";
-    // bg.style.color = "black";
+  if (scroll > 0.78) {
+    troisieme.style.color = " #fc484b";
+    deuxieme.style.color = "#22244d";
+  }
+  else {
+    troisieme.style.color = "#22244d";
+    
   }
 });
