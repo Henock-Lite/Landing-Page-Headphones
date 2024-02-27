@@ -375,18 +375,28 @@ video {
   /* -webkit-box-reflect: below 0px
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); */
 }
-.longin-part{
+.longin-part {
   width: 100%;
   height: 100%;
 }
-.log-title{
-  background:#8787ce;
+.log-title {
+  background: #F3F2F5;
   width: 100%;
+  padding: 20px;
+  height: 100px;
 }
-.log-title h2{
- text-align: center;
- padding-top: 50px;
- text-transform: uppercase;
+.log-title h2 {
+  margin: 20px auto;
+  text-transform: uppercase;
+  text-align: center;
 }
-
-
+.news-casque{
+  width: 100%;
+  height: 100%;
+}
+.news-title{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
