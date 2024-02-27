@@ -2,8 +2,8 @@ const navigation = document.querySelector(".first-Part");
 const logo = document.querySelector(".logo");
 const title = document.querySelector(".title-product >h2");
 const titre = document.querySelector(".title-product >h3");
-const Mov = document.querySelectorAll(".cards-product");
-const panier = document.querySelector(".panier");
+const carte = document.querySelectorAll(".one");
+const pan = document.querySelector(".bleu");
 
 window.addEventListener("scroll", () => {
   let scroll = (window.scrollY + innerHeight) / document.body.offsetHeight;
@@ -35,9 +35,9 @@ window.addEventListener("scroll", () => {
     titre.style.transform = "translateX(0)";
   }
 });
-
-Mov.forEach((boxe) => {
-  boxe.addEventListener("mouseover", () => {
-    panier.style.opacity = "1";
-  });SSs
+carte.forEach((cart) => {
+  const pan = cart.querySelector(".bleu");
+  cart.addEventListener("mouseover", () => {
+    pan.style.opacity = "1";
+  });
 });
