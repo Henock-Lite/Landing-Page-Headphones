@@ -400,3 +400,50 @@ video {
   margin: 0 auto;
   text-align: center;
 }
+.news-title h3{
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+.news-title p{
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.cont-news{
+  display: grid;
+  grid-template-areas:"first  asideone"
+  "second asidetwo";
+  width: 100%;
+  margin: 0 auto;
+  height: clamp(600px,50vh,400px);
+  gap: 8px;
+}
+.premier{
+  grid-template-areas: first;
+  width: 100%;
+  /* background: url(./img/kat-stage-primary-flyout-bluetooth-kopfhoerer-2023.webp) center/cover; */
+}
+.deuxieme{
+  grid-template-areas:asideone;
+  /* background: url(./img/AIRY_SPORTS_TWS-black-Set.webp) center/cover; */
+  width: 100%;
+}
+.troisieme{
+  grid-template-areas:second;
+  /* background: url(./img/headerbild-kopfhoerer-in-ear.webp) center/cover; */
+   width: 100%;
+}
+.quatrieme{
+  grid-template-areas: asidetwo;
+  /* background: url(img/stage-primary.webp) center/cover; */
+   width: 100%;
+}
+.cont-news a{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+
