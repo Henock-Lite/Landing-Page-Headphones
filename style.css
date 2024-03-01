@@ -380,7 +380,7 @@ video {
   height: 100%;
 }
 .log-title {
-  background: #F3F2F5;
+  background: #f3f2f5;
   width: 100%;
   padding: 20px;
   height: 100px;
@@ -390,60 +390,65 @@ video {
   text-transform: uppercase;
   text-align: center;
 }
-.news-casque{
+.news-casque {
   width: 100%;
   height: 100%;
 }
-.news-title{
+.news-title {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 25px auto;
   text-align: center;
 }
-.news-title h3{
+.news-title h3 {
   font-size: 1.6em;
   margin-bottom: 15px;
 }
-.news-title p{
+.news-title p {
   font-variant: small-caps;
   font-style: italic;
   font-weight: 700;
   font-size: 1.4em;
 }
-
-.cont-news{
+.cont-news {
   display: grid;
-  grid-template-areas:"first  asideone"
-  "second asidetwo";
+  grid-template-areas:
+    "first  asideone"
+    "second asidetwo";
   width: 100%;
   margin: 0 auto;
-  height: clamp(600px,50vh,400px);
+  height: clamp(600px, 50vh, 400px);
   gap: 8px;
 }
-.premier{
+.title-img {
+  position: relative;
+  color: white;
+}
+.title-img h3 {
+  position: absolute;
+  top: -70px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  left: 28px;
+}
+
+.premier {
   grid-template-areas: first;
-  width: 100%;
-  /* background: url(./img/kat-stage-primary-flyout-bluetooth-kopfhoerer-2023.webp) center/cover; */
 }
-.deuxieme{
-  grid-template-areas:asideone;
-  /* background: url(./img/AIRY_SPORTS_TWS-black-Set.webp) center/cover; */
-  width: 100%;
+
+.deuxieme {
+  grid-template-areas: asideone;
 }
-.troisieme{
-  grid-template-areas:second;
-  /* background: url(./img/headerbild-kopfhoerer-in-ear.webp) center/cover; */
-   width: 100%;
+.troisieme {
+  grid-template-areas: second;
 }
-.quatrieme{
+.quatrieme {
   grid-template-areas: asidetwo;
-  /* background: url(img/stage-primary.webp) center/cover; */
-   width: 100%;
 }
-.cont-news a{
-  cursor: pointer;
-  height: 100%;
+div a img {
   width: 100%;
+  height: 100%;
 }
-
-
