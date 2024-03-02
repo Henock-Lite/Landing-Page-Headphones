@@ -10,6 +10,7 @@ window.addEventListener("scroll", () => {
   console.log(scroll);
   if (scroll > 0.31) {
     navigation.style.height = "90px";
+
     logo.style.opacity = "1";
   } else {
     navigation.style.height = "50px";
