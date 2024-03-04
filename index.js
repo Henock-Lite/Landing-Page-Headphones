@@ -24,17 +24,23 @@ window.addEventListener("scroll", () => {
   } else {
     deuxieme.style.color = " #22244d";
   }
-  if (scroll > 0.73) {
+  if (scroll > 0.61) {
     troisieme.style.color = " #fc484b";
     deuxieme.style.color = "#22244d";
+    title.style.transition = ".7s ease";
     title.style.transform = "translateX(0)";
   } else {
     troisieme.style.color = "#22244d";
   }
-
-  if (scroll > 0.84) {
+  if (scroll > 0.73) {
+    titre.style.transition = ".7s ease";
     titre.style.transform = "translateX(0)";
-  }
+  } 
+  
+
+
+
+  
 });
 carte.forEach((cart) => {
   const pan = cart.querySelector(".bleu");
