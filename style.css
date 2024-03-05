@@ -21,6 +21,9 @@ body {
   margin: 0 auto;
   background: #e1edf4;
 }
+html {
+  scroll-behavior: smooth;
+}
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
@@ -465,12 +468,12 @@ div a img {
   height: clamp(500px, 80vh, 515px);
   background: white;
   padding: 26px;
-opacity: 0;
   position: absolute;
   box-shadow: 5px 5px 16px;
-  transform: translate(-50%, -50%) translateY(-250px);
+  transform: translate(-50%, -50%) translateY(-60%);
   top: 50%;
-  left: 50%;
+  left: -500px;
+  transition: all  cubic-bezier(1, 0, 0, 1).3s;
 }
 .img-ct {
   display: flex;
@@ -538,9 +541,12 @@ input[type="button"] {
   letter-spacing: 3px;
 }
 .mss p {
-  padding: 5px 0;
+  margin: 5px 0;
   text-align: center;
   cursor: pointer;
   text-transform: capitalize;
   font-size: 0.8em;
+}
+.mss p:hover {
+  color: #ba181b;
 }
